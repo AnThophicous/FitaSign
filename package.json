@@ -80,6 +80,25 @@
       {
         "from": "dist/mcp/stdio.cjs",
         "to": "mcp/stdio.cjs"
+      },
+      {
+        "from": "AGENTS.md",
+        "to": "AGENTS.md"
+      },
+      {
+        "from": "skills",
+        "to": "skills"
+      },
+      {
+        "from": "docs",
+        "to": "docs",
+        "filter": [
+          "*.md"
+        ]
+      },
+      {
+        "from": "dist/THIRD_PARTY_NOTICES.txt",
+        "to": "THIRD_PARTY_NOTICES.txt"
       }
     ],
     "artifactName": "FitaSign-${version}-${os}-${arch}.${ext}",

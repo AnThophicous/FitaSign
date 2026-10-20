@@ -705,30 +705,31 @@ h1 {
 }
 .resize-handle {
   position: absolute;
-  width: 8px;
-  height: 8px;
+  width: calc(8px * var(--inverse-zoom, 1));
+  height: calc(8px * var(--inverse-zoom, 1));
+  border-radius: 2px;
   background: #dedede;
   border: 1px solid #292929;
   pointer-events: auto;
 }
 .resize-handle.nw {
-  left: -4px;
-  top: -4px;
+  left: calc(-4px * var(--inverse-zoom, 1));
+  top: calc(-4px * var(--inverse-zoom, 1));
   cursor: nwse-resize;
 }
 .resize-handle.ne {
-  right: -4px;
-  top: -4px;
+  right: calc(-4px * var(--inverse-zoom, 1));
+  top: calc(-4px * var(--inverse-zoom, 1));
   cursor: nesw-resize;
 }
 .resize-handle.sw {
-  left: -4px;
-  bottom: -4px;
+  left: calc(-4px * var(--inverse-zoom, 1));
+  bottom: calc(-4px * var(--inverse-zoom, 1));
   cursor: nesw-resize;
 }
 .resize-handle.se {
-  right: -4px;
-  bottom: -4px;
+  right: calc(-4px * var(--inverse-zoom, 1));
+  bottom: calc(-4px * var(--inverse-zoom, 1));
   cursor: nwse-resize;
 }
 .image-placeholder {

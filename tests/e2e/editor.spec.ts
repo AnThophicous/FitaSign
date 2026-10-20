@@ -107,8 +107,9 @@ test('cria, edita, desfaz, reabre, exporta e controla pelo MCP local', async () 
 });
 test('exemplo monocromático, arraste e resize em uma ação de desfazer', async () => {
   await page.getByRole('button', { name: 'Abrir exemplo Menu principal', exact: true }).click();
-  const play = page.locator('[data-node-id="play"]');
+  const play = page.locator('[data-artboard] [data-node-id="play"]');
   await expect(play).toBeVisible();
+  await play.click();
   const box = (await play.boundingBox())!;
   await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
   await page.mouse.down();
@@ -118,10 +119,16 @@ test('exemplo monocromático, arraste e resize em uma ação de desfazer', async
   await page.getByLabel('Desfazer (Ctrl+Z)', { exact: true }).click();
   await expect(page.getByLabel('X', { exact: true })).toHaveValue('84');
   const handle = play.locator('.resize-handle.se');
+  await expect(page.getByTitle('Salvo no dispositivo', { exact: true })).toBeVisible();
+  await handle.hover();
   const handleBox = (await handle.boundingBox())!;
-  await page.mouse.move(handleBox.x + 4, handleBox.y + 4);
+  await page.mouse.move(handleBox.x + handleBox.width / 2, handleBox.y + handleBox.height / 2);
   await page.mouse.down();
-  await page.mouse.move(handleBox.x + 34, handleBox.y + 24, { steps: 5 });
+  await page.mouse.move(
+    handleBox.x + handleBox.width / 2 + 30,
+    handleBox.y + handleBox.height / 2 + 20,
+    { steps: 5 },
+  );
   await page.mouse.up();
   await expect(page.getByLabel('W', { exact: true })).not.toHaveValue('320');
   await page.getByLabel('Desfazer (Ctrl+Z)', { exact: true }).click();

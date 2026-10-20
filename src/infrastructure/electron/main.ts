@@ -1,4 +1,14 @@
-import { app, BrowserWindow, clipboard, dialog, ipcMain, net, protocol, session } from 'electron';
+import {
+  app,
+  BrowserWindow,
+  clipboard,
+  dialog,
+  ipcMain,
+  nativeTheme,
+  net,
+  protocol,
+  session,
+} from 'electron';
 import { randomUUID } from 'node:crypto';
 import { readFile, stat, writeFile } from 'node:fs/promises';
 import { dirname, join, resolve, sep } from 'node:path';
@@ -215,6 +225,7 @@ else {
   app
     .whenReady()
     .then(async () => {
+      nativeTheme.themeSource = 'dark';
       session.defaultSession.setPermissionRequestHandler((_contents, _permission, callback) =>
         callback(false),
       );

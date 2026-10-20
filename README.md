@@ -44,6 +44,8 @@ O exportador cria os elementos e tweens. Conecte os eventos dos botões no códi
 
 ## Agentes externos
 
+Na instalação empacotada, `resources/` contém o servidor MCP, `AGENTS.md`, `skills/` e a documentação de integração, acessíveis sem abrir o arquivo asar.
+
 O aplicativo não inclui um assistente. Codex, Claude, OpenCode e outros clientes MCP podem controlar o documento usando o servidor stdio distribuído com o FitaSign. Abra **Conexões** para copiar a configuração local. Veja [MCP](docs/mcp.md), [AGENTS.md](AGENTS.md) e a [skill de composição](skills/fitasign-ui/SKILL.md).
 
 ## Limites da beta

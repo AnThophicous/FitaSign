@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import type { PointerEvent, WheelEvent } from 'react';
+import type { CSSProperties, PointerEvent, WheelEvent } from 'react';
 import {
   CornersOutIcon,
   CursorIcon,
@@ -245,9 +245,12 @@ export function Canvas({
       </div>
       <div
         className="artboard-position"
-        style={{
-          transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom}) translate(-50%, -50%)`,
-        }}
+        style={
+          {
+            transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom}) translate(-50%, -50%)`,
+            '--inverse-zoom': 1 / zoom,
+          } as CSSProperties
+        }
       >
         <div
           data-artboard

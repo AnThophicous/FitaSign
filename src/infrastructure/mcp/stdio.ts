@@ -266,7 +266,7 @@ server.registerResource(
       {
         uri: 'fitasign://schema',
         mimeType: 'text/plain',
-        text: 'FitaSign v1: ScreenGui único, filhos Frame/TextLabel/TextButton/ImageLabel. IDs únicos; parentId e children consistentes. UDim2={xScale,xOffset,yScale,yOffset}. anchor={x,y} entre 0 e 1. Cores #RRGGBB. transparency: 0 opaco, 1 invisível. Textos Gotham/Arial/SourceSans. Até 2000 camadas e 50 níveis. UICorner, UIStroke, UIGradient e TweenService são propriedades da camada. apply_commands é atômico e exige revisão. Capture apenas o projeto aberto. Sem execução arbitrária de código ou acesso a caminhos de arquivo via MCP.',
+        text: 'FitaSign v1: ScreenGui único. Consulte search_catalog para as classes, propriedades e enums suportados. IDs únicos; parentId e children consistentes. UDim2={xScale,xOffset,yScale,yOffset}. anchor={x,y} entre 0 e 1. Cores #RRGGBB. transparency: 0 opaco, 1 invisível. Até 2000 camadas e 50 níveis. Os controles básicos usam properties; propriedades adicionais usam properties.native com nomes Roblox. native é substituído inteiro no update. UICorner/UIStroke/UIGradient podem ser modificadores explícitos ou propriedades básicas. Preview parcial: validar no Studio. apply_commands é atômico e exige revisão. open_project prepara o editor para capture_canvas. Sem execução arbitrária de código ou acesso a caminhos de arquivo via MCP. AGENTS.md e skills são distribuídos em resources na instalação.',
       },
     ],
   }),
