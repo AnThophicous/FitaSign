@@ -1,0 +1,3348 @@
+{
+  "version": "version-4f087c32742644ab",
+  "source": "https://setup.rbxcdn.com/version-4f087c32742644ab-API-Dump.json",
+  "classes": {
+    "CanvasGroup": {
+      "visual": true,
+      "properties": {
+        "AutoLocalize": {
+          "type": "bool",
+          "category": "Localization"
+        },
+        "RootLocalizationTable": {
+          "type": "ref",
+          "category": "Localization"
+        },
+        "SelectionBehaviorDown": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorLeft": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorRight": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorUp": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionGroup": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "Active": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "AnchorPoint": {
+          "type": "Vector2",
+          "category": "Data"
+        },
+        "AutomaticSize": {
+          "type": "enum",
+          "enum": "AutomaticSize",
+          "category": "Data"
+        },
+        "BackgroundColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BackgroundTransparency": {
+          "type": "float",
+          "category": "Data"
+        },
+        "BorderColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BorderMode": {
+          "type": "enum",
+          "enum": "BorderMode",
+          "category": "Data"
+        },
+        "BorderSizePixel": {
+          "type": "int",
+          "category": "Data"
+        },
+        "ClipsDescendants": {
+          "type": "bool",
+          "category": "Behavior"
+        },
+        "InputSink": {
+          "type": "enum",
+          "enum": "InputSink",
+          "category": "Data"
+        },
+        "Interactable": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "LayoutOrder": {
+          "type": "int",
+          "category": "Data"
+        },
+        "NextSelectionDown": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionLeft": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionRight": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionUp": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "Position": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "Rotation": {
+          "type": "float",
+          "category": "Data"
+        },
+        "Selectable": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "SelectionImageObject": {
+          "type": "ref",
+          "category": "Appearance"
+        },
+        "SelectionOrder": {
+          "type": "int",
+          "category": "Selection"
+        },
+        "Size": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "SizeConstraint": {
+          "type": "enum",
+          "enum": "SizeConstraint",
+          "category": "Data"
+        },
+        "Visible": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "ZIndex": {
+          "type": "int",
+          "category": "Data"
+        },
+        "GroupColor3": {
+          "type": "Color3",
+          "category": "Appearance"
+        },
+        "GroupTransparency": {
+          "type": "float",
+          "category": "Appearance"
+        }
+      }
+    },
+    "Frame": {
+      "visual": true,
+      "properties": {
+        "AutoLocalize": {
+          "type": "bool",
+          "category": "Localization"
+        },
+        "RootLocalizationTable": {
+          "type": "ref",
+          "category": "Localization"
+        },
+        "SelectionBehaviorDown": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorLeft": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorRight": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorUp": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionGroup": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "Active": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "AnchorPoint": {
+          "type": "Vector2",
+          "category": "Data"
+        },
+        "AutomaticSize": {
+          "type": "enum",
+          "enum": "AutomaticSize",
+          "category": "Data"
+        },
+        "BackgroundColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BackgroundTransparency": {
+          "type": "float",
+          "category": "Data"
+        },
+        "BorderColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BorderMode": {
+          "type": "enum",
+          "enum": "BorderMode",
+          "category": "Data"
+        },
+        "BorderSizePixel": {
+          "type": "int",
+          "category": "Data"
+        },
+        "ClipsDescendants": {
+          "type": "bool",
+          "category": "Behavior"
+        },
+        "InputSink": {
+          "type": "enum",
+          "enum": "InputSink",
+          "category": "Data"
+        },
+        "Interactable": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "LayoutOrder": {
+          "type": "int",
+          "category": "Data"
+        },
+        "NextSelectionDown": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionLeft": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionRight": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionUp": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "Position": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "Rotation": {
+          "type": "float",
+          "category": "Data"
+        },
+        "Selectable": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "SelectionImageObject": {
+          "type": "ref",
+          "category": "Appearance"
+        },
+        "SelectionOrder": {
+          "type": "int",
+          "category": "Selection"
+        },
+        "Size": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "SizeConstraint": {
+          "type": "enum",
+          "enum": "SizeConstraint",
+          "category": "Data"
+        },
+        "Visible": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "ZIndex": {
+          "type": "int",
+          "category": "Data"
+        },
+        "Style": {
+          "type": "enum",
+          "enum": "FrameStyle",
+          "category": "Data"
+        }
+      }
+    },
+    "ImageButton": {
+      "visual": true,
+      "properties": {
+        "AutoLocalize": {
+          "type": "bool",
+          "category": "Localization"
+        },
+        "RootLocalizationTable": {
+          "type": "ref",
+          "category": "Localization"
+        },
+        "SelectionBehaviorDown": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorLeft": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorRight": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorUp": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionGroup": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "Active": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "AnchorPoint": {
+          "type": "Vector2",
+          "category": "Data"
+        },
+        "AutomaticSize": {
+          "type": "enum",
+          "enum": "AutomaticSize",
+          "category": "Data"
+        },
+        "BackgroundColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BackgroundTransparency": {
+          "type": "float",
+          "category": "Data"
+        },
+        "BorderColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BorderMode": {
+          "type": "enum",
+          "enum": "BorderMode",
+          "category": "Data"
+        },
+        "BorderSizePixel": {
+          "type": "int",
+          "category": "Data"
+        },
+        "ClipsDescendants": {
+          "type": "bool",
+          "category": "Behavior"
+        },
+        "InputSink": {
+          "type": "enum",
+          "enum": "InputSink",
+          "category": "Data"
+        },
+        "Interactable": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "LayoutOrder": {
+          "type": "int",
+          "category": "Data"
+        },
+        "NextSelectionDown": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionLeft": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionRight": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionUp": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "Position": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "Rotation": {
+          "type": "float",
+          "category": "Data"
+        },
+        "Selectable": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "SelectionImageObject": {
+          "type": "ref",
+          "category": "Appearance"
+        },
+        "SelectionOrder": {
+          "type": "int",
+          "category": "Selection"
+        },
+        "Size": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "SizeConstraint": {
+          "type": "enum",
+          "enum": "SizeConstraint",
+          "category": "Data"
+        },
+        "Visible": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "ZIndex": {
+          "type": "int",
+          "category": "Data"
+        },
+        "AutoButtonColor": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "HoverHapticEffect": {
+          "type": "ref",
+          "category": "Haptic"
+        },
+        "Modal": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "PressHapticEffect": {
+          "type": "ref",
+          "category": "Haptic"
+        },
+        "Selected": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "Style": {
+          "type": "enum",
+          "enum": "ButtonStyle",
+          "category": "Data"
+        },
+        "HoverImage": {
+          "type": "ContentId",
+          "category": "Image"
+        },
+        "HoverImageContent": {
+          "type": "Content",
+          "category": "Image"
+        },
+        "Image": {
+          "type": "ContentId",
+          "category": "Image"
+        },
+        "ImageColor3": {
+          "type": "Color3",
+          "category": "Image"
+        },
+        "ImageContent": {
+          "type": "Content",
+          "category": "Image"
+        },
+        "ImageRectOffset": {
+          "type": "Vector2",
+          "category": "Image"
+        },
+        "ImageRectSize": {
+          "type": "Vector2",
+          "category": "Image"
+        },
+        "ImageTransparency": {
+          "type": "float",
+          "category": "Image"
+        },
+        "PressedImage": {
+          "type": "ContentId",
+          "category": "Image"
+        },
+        "PressedImageContent": {
+          "type": "Content",
+          "category": "Image"
+        },
+        "ResampleMode": {
+          "type": "enum",
+          "enum": "ResamplerMode",
+          "category": "Image"
+        },
+        "ScaleType": {
+          "type": "enum",
+          "enum": "ScaleType",
+          "category": "Image"
+        },
+        "SliceCenter": {
+          "type": "Rect",
+          "category": "Image"
+        },
+        "SliceScale": {
+          "type": "float",
+          "category": "Image"
+        },
+        "TileSize": {
+          "type": "UDim2",
+          "category": "Image"
+        }
+      }
+    },
+    "TextButton": {
+      "visual": true,
+      "properties": {
+        "AutoLocalize": {
+          "type": "bool",
+          "category": "Localization"
+        },
+        "RootLocalizationTable": {
+          "type": "ref",
+          "category": "Localization"
+        },
+        "SelectionBehaviorDown": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorLeft": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorRight": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorUp": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionGroup": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "Active": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "AnchorPoint": {
+          "type": "Vector2",
+          "category": "Data"
+        },
+        "AutomaticSize": {
+          "type": "enum",
+          "enum": "AutomaticSize",
+          "category": "Data"
+        },
+        "BackgroundColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BackgroundTransparency": {
+          "type": "float",
+          "category": "Data"
+        },
+        "BorderColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BorderMode": {
+          "type": "enum",
+          "enum": "BorderMode",
+          "category": "Data"
+        },
+        "BorderSizePixel": {
+          "type": "int",
+          "category": "Data"
+        },
+        "ClipsDescendants": {
+          "type": "bool",
+          "category": "Behavior"
+        },
+        "InputSink": {
+          "type": "enum",
+          "enum": "InputSink",
+          "category": "Data"
+        },
+        "Interactable": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "LayoutOrder": {
+          "type": "int",
+          "category": "Data"
+        },
+        "NextSelectionDown": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionLeft": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionRight": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionUp": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "Position": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "Rotation": {
+          "type": "float",
+          "category": "Data"
+        },
+        "Selectable": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "SelectionImageObject": {
+          "type": "ref",
+          "category": "Appearance"
+        },
+        "SelectionOrder": {
+          "type": "int",
+          "category": "Selection"
+        },
+        "Size": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "SizeConstraint": {
+          "type": "enum",
+          "enum": "SizeConstraint",
+          "category": "Data"
+        },
+        "Visible": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "ZIndex": {
+          "type": "int",
+          "category": "Data"
+        },
+        "AutoButtonColor": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "HoverHapticEffect": {
+          "type": "ref",
+          "category": "Haptic"
+        },
+        "Modal": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "PressHapticEffect": {
+          "type": "ref",
+          "category": "Haptic"
+        },
+        "Selected": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "Style": {
+          "type": "enum",
+          "enum": "ButtonStyle",
+          "category": "Data"
+        },
+        "FontFace": {
+          "type": "Font",
+          "category": "Text"
+        },
+        "LineHeight": {
+          "type": "float",
+          "category": "Text"
+        },
+        "MaxVisibleGraphemes": {
+          "type": "int",
+          "category": "Text"
+        },
+        "OpenTypeFeatures": {
+          "type": "string",
+          "category": "Text"
+        },
+        "RichText": {
+          "type": "bool",
+          "category": "Text"
+        },
+        "Text": {
+          "type": "string",
+          "category": "Text"
+        },
+        "TextColor3": {
+          "type": "Color3",
+          "category": "Text"
+        },
+        "TextDirection": {
+          "type": "enum",
+          "enum": "TextDirection",
+          "category": "Text"
+        },
+        "TextScaled": {
+          "type": "bool",
+          "category": "Text"
+        },
+        "TextSize": {
+          "type": "float",
+          "category": "Text"
+        },
+        "TextStrokeColor3": {
+          "type": "Color3",
+          "category": "Text"
+        },
+        "TextStrokeTransparency": {
+          "type": "float",
+          "category": "Text"
+        },
+        "TextTransparency": {
+          "type": "float",
+          "category": "Text"
+        },
+        "TextTruncate": {
+          "type": "enum",
+          "enum": "TextTruncate",
+          "category": "Text"
+        },
+        "TextWrapped": {
+          "type": "bool",
+          "category": "Text"
+        },
+        "TextXAlignment": {
+          "type": "enum",
+          "enum": "TextXAlignment",
+          "category": "Text"
+        },
+        "TextYAlignment": {
+          "type": "enum",
+          "enum": "TextYAlignment",
+          "category": "Text"
+        }
+      }
+    },
+    "ImageLabel": {
+      "visual": true,
+      "properties": {
+        "AutoLocalize": {
+          "type": "bool",
+          "category": "Localization"
+        },
+        "RootLocalizationTable": {
+          "type": "ref",
+          "category": "Localization"
+        },
+        "SelectionBehaviorDown": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorLeft": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorRight": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorUp": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionGroup": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "Active": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "AnchorPoint": {
+          "type": "Vector2",
+          "category": "Data"
+        },
+        "AutomaticSize": {
+          "type": "enum",
+          "enum": "AutomaticSize",
+          "category": "Data"
+        },
+        "BackgroundColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BackgroundTransparency": {
+          "type": "float",
+          "category": "Data"
+        },
+        "BorderColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BorderMode": {
+          "type": "enum",
+          "enum": "BorderMode",
+          "category": "Data"
+        },
+        "BorderSizePixel": {
+          "type": "int",
+          "category": "Data"
+        },
+        "ClipsDescendants": {
+          "type": "bool",
+          "category": "Behavior"
+        },
+        "InputSink": {
+          "type": "enum",
+          "enum": "InputSink",
+          "category": "Data"
+        },
+        "Interactable": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "LayoutOrder": {
+          "type": "int",
+          "category": "Data"
+        },
+        "NextSelectionDown": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionLeft": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionRight": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionUp": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "Position": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "Rotation": {
+          "type": "float",
+          "category": "Data"
+        },
+        "Selectable": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "SelectionImageObject": {
+          "type": "ref",
+          "category": "Appearance"
+        },
+        "SelectionOrder": {
+          "type": "int",
+          "category": "Selection"
+        },
+        "Size": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "SizeConstraint": {
+          "type": "enum",
+          "enum": "SizeConstraint",
+          "category": "Data"
+        },
+        "Visible": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "ZIndex": {
+          "type": "int",
+          "category": "Data"
+        },
+        "Image": {
+          "type": "ContentId",
+          "category": "Image"
+        },
+        "ImageColor3": {
+          "type": "Color3",
+          "category": "Image"
+        },
+        "ImageContent": {
+          "type": "Content",
+          "category": "Image"
+        },
+        "ImageRectOffset": {
+          "type": "Vector2",
+          "category": "Image"
+        },
+        "ImageRectSize": {
+          "type": "Vector2",
+          "category": "Image"
+        },
+        "ImageTransparency": {
+          "type": "float",
+          "category": "Image"
+        },
+        "ResampleMode": {
+          "type": "enum",
+          "enum": "ResamplerMode",
+          "category": "Image"
+        },
+        "ScaleType": {
+          "type": "enum",
+          "enum": "ScaleType",
+          "category": "Image"
+        },
+        "SliceCenter": {
+          "type": "Rect",
+          "category": "Image"
+        },
+        "SliceScale": {
+          "type": "float",
+          "category": "Image"
+        },
+        "TileSize": {
+          "type": "UDim2",
+          "category": "Image"
+        }
+      }
+    },
+    "TextLabel": {
+      "visual": true,
+      "properties": {
+        "AutoLocalize": {
+          "type": "bool",
+          "category": "Localization"
+        },
+        "RootLocalizationTable": {
+          "type": "ref",
+          "category": "Localization"
+        },
+        "SelectionBehaviorDown": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorLeft": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorRight": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorUp": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionGroup": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "Active": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "AnchorPoint": {
+          "type": "Vector2",
+          "category": "Data"
+        },
+        "AutomaticSize": {
+          "type": "enum",
+          "enum": "AutomaticSize",
+          "category": "Data"
+        },
+        "BackgroundColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BackgroundTransparency": {
+          "type": "float",
+          "category": "Data"
+        },
+        "BorderColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BorderMode": {
+          "type": "enum",
+          "enum": "BorderMode",
+          "category": "Data"
+        },
+        "BorderSizePixel": {
+          "type": "int",
+          "category": "Data"
+        },
+        "ClipsDescendants": {
+          "type": "bool",
+          "category": "Behavior"
+        },
+        "InputSink": {
+          "type": "enum",
+          "enum": "InputSink",
+          "category": "Data"
+        },
+        "Interactable": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "LayoutOrder": {
+          "type": "int",
+          "category": "Data"
+        },
+        "NextSelectionDown": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionLeft": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionRight": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionUp": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "Position": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "Rotation": {
+          "type": "float",
+          "category": "Data"
+        },
+        "Selectable": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "SelectionImageObject": {
+          "type": "ref",
+          "category": "Appearance"
+        },
+        "SelectionOrder": {
+          "type": "int",
+          "category": "Selection"
+        },
+        "Size": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "SizeConstraint": {
+          "type": "enum",
+          "enum": "SizeConstraint",
+          "category": "Data"
+        },
+        "Visible": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "ZIndex": {
+          "type": "int",
+          "category": "Data"
+        },
+        "FontFace": {
+          "type": "Font",
+          "category": "Text"
+        },
+        "LineHeight": {
+          "type": "float",
+          "category": "Text"
+        },
+        "MaxVisibleGraphemes": {
+          "type": "int",
+          "category": "Text"
+        },
+        "OpenTypeFeatures": {
+          "type": "string",
+          "category": "Text"
+        },
+        "RichText": {
+          "type": "bool",
+          "category": "Text"
+        },
+        "Text": {
+          "type": "string",
+          "category": "Text"
+        },
+        "TextColor3": {
+          "type": "Color3",
+          "category": "Text"
+        },
+        "TextDirection": {
+          "type": "enum",
+          "enum": "TextDirection",
+          "category": "Text"
+        },
+        "TextScaled": {
+          "type": "bool",
+          "category": "Text"
+        },
+        "TextSize": {
+          "type": "float",
+          "category": "Text"
+        },
+        "TextStrokeColor3": {
+          "type": "Color3",
+          "category": "Text"
+        },
+        "TextStrokeTransparency": {
+          "type": "float",
+          "category": "Text"
+        },
+        "TextTransparency": {
+          "type": "float",
+          "category": "Text"
+        },
+        "TextTruncate": {
+          "type": "enum",
+          "enum": "TextTruncate",
+          "category": "Text"
+        },
+        "TextWrapped": {
+          "type": "bool",
+          "category": "Text"
+        },
+        "TextXAlignment": {
+          "type": "enum",
+          "enum": "TextXAlignment",
+          "category": "Text"
+        },
+        "TextYAlignment": {
+          "type": "enum",
+          "enum": "TextYAlignment",
+          "category": "Text"
+        }
+      }
+    },
+    "InputActionLabel": {
+      "visual": true,
+      "properties": {
+        "AutoLocalize": {
+          "type": "bool",
+          "category": "Localization"
+        },
+        "RootLocalizationTable": {
+          "type": "ref",
+          "category": "Localization"
+        },
+        "SelectionBehaviorDown": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorLeft": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorRight": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorUp": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionGroup": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "Active": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "AnchorPoint": {
+          "type": "Vector2",
+          "category": "Data"
+        },
+        "AutomaticSize": {
+          "type": "enum",
+          "enum": "AutomaticSize",
+          "category": "Data"
+        },
+        "BackgroundColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BackgroundTransparency": {
+          "type": "float",
+          "category": "Data"
+        },
+        "BorderColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BorderMode": {
+          "type": "enum",
+          "enum": "BorderMode",
+          "category": "Data"
+        },
+        "BorderSizePixel": {
+          "type": "int",
+          "category": "Data"
+        },
+        "ClipsDescendants": {
+          "type": "bool",
+          "category": "Behavior"
+        },
+        "InputSink": {
+          "type": "enum",
+          "enum": "InputSink",
+          "category": "Data"
+        },
+        "Interactable": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "LayoutOrder": {
+          "type": "int",
+          "category": "Data"
+        },
+        "NextSelectionDown": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionLeft": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionRight": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionUp": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "Position": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "Rotation": {
+          "type": "float",
+          "category": "Data"
+        },
+        "Selectable": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "SelectionImageObject": {
+          "type": "ref",
+          "category": "Appearance"
+        },
+        "SelectionOrder": {
+          "type": "int",
+          "category": "Selection"
+        },
+        "Size": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "SizeConstraint": {
+          "type": "enum",
+          "enum": "SizeConstraint",
+          "category": "Data"
+        },
+        "Visible": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "ZIndex": {
+          "type": "int",
+          "category": "Data"
+        },
+        "FontFace": {
+          "type": "Font",
+          "category": "Text"
+        },
+        "ImageColor3": {
+          "type": "Color3",
+          "category": "Image"
+        },
+        "ImageTransparency": {
+          "type": "float",
+          "category": "Image"
+        },
+        "InputAction": {
+          "type": "ref",
+          "category": "Data"
+        },
+        "TextColor3": {
+          "type": "Color3",
+          "category": "Text"
+        },
+        "TextSize": {
+          "type": "float",
+          "category": "Text"
+        },
+        "TextTransparency": {
+          "type": "float",
+          "category": "Text"
+        },
+        "TextWrapped": {
+          "type": "bool",
+          "category": "Text"
+        },
+        "TextXAlignment": {
+          "type": "enum",
+          "enum": "TextXAlignment",
+          "category": "Text"
+        },
+        "TextYAlignment": {
+          "type": "enum",
+          "enum": "TextYAlignment",
+          "category": "Text"
+        }
+      }
+    },
+    "RelativeGui": {
+      "visual": true,
+      "properties": {
+        "AutoLocalize": {
+          "type": "bool",
+          "category": "Localization"
+        },
+        "RootLocalizationTable": {
+          "type": "ref",
+          "category": "Localization"
+        },
+        "SelectionBehaviorDown": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorLeft": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorRight": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorUp": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionGroup": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "Active": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "AnchorPoint": {
+          "type": "Vector2",
+          "category": "Data"
+        },
+        "AutomaticSize": {
+          "type": "enum",
+          "enum": "AutomaticSize",
+          "category": "Data"
+        },
+        "BackgroundColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BackgroundTransparency": {
+          "type": "float",
+          "category": "Data"
+        },
+        "BorderColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BorderMode": {
+          "type": "enum",
+          "enum": "BorderMode",
+          "category": "Data"
+        },
+        "BorderSizePixel": {
+          "type": "int",
+          "category": "Data"
+        },
+        "ClipsDescendants": {
+          "type": "bool",
+          "category": "Behavior"
+        },
+        "InputSink": {
+          "type": "enum",
+          "enum": "InputSink",
+          "category": "Data"
+        },
+        "Interactable": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "LayoutOrder": {
+          "type": "int",
+          "category": "Data"
+        },
+        "NextSelectionDown": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionLeft": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionRight": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionUp": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "Position": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "Rotation": {
+          "type": "float",
+          "category": "Data"
+        },
+        "Selectable": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "SelectionImageObject": {
+          "type": "ref",
+          "category": "Appearance"
+        },
+        "SelectionOrder": {
+          "type": "int",
+          "category": "Selection"
+        },
+        "Size": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "SizeConstraint": {
+          "type": "enum",
+          "enum": "SizeConstraint",
+          "category": "Data"
+        },
+        "Visible": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "ZIndex": {
+          "type": "int",
+          "category": "Data"
+        }
+      }
+    },
+    "ScrollingFrame": {
+      "visual": true,
+      "properties": {
+        "AutoLocalize": {
+          "type": "bool",
+          "category": "Localization"
+        },
+        "RootLocalizationTable": {
+          "type": "ref",
+          "category": "Localization"
+        },
+        "SelectionBehaviorDown": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorLeft": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorRight": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorUp": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionGroup": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "Active": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "AnchorPoint": {
+          "type": "Vector2",
+          "category": "Data"
+        },
+        "AutomaticSize": {
+          "type": "enum",
+          "enum": "AutomaticSize",
+          "category": "Data"
+        },
+        "BackgroundColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BackgroundTransparency": {
+          "type": "float",
+          "category": "Data"
+        },
+        "BorderColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BorderMode": {
+          "type": "enum",
+          "enum": "BorderMode",
+          "category": "Data"
+        },
+        "BorderSizePixel": {
+          "type": "int",
+          "category": "Data"
+        },
+        "ClipsDescendants": {
+          "type": "bool",
+          "category": "Behavior"
+        },
+        "InputSink": {
+          "type": "enum",
+          "enum": "InputSink",
+          "category": "Data"
+        },
+        "Interactable": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "LayoutOrder": {
+          "type": "int",
+          "category": "Data"
+        },
+        "NextSelectionDown": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionLeft": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionRight": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionUp": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "Position": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "Rotation": {
+          "type": "float",
+          "category": "Data"
+        },
+        "Selectable": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "SelectionImageObject": {
+          "type": "ref",
+          "category": "Appearance"
+        },
+        "SelectionOrder": {
+          "type": "int",
+          "category": "Selection"
+        },
+        "Size": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "SizeConstraint": {
+          "type": "enum",
+          "enum": "SizeConstraint",
+          "category": "Data"
+        },
+        "Visible": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "ZIndex": {
+          "type": "int",
+          "category": "Data"
+        },
+        "AutomaticCanvasSize": {
+          "type": "enum",
+          "enum": "AutomaticSize",
+          "category": "Scrolling"
+        },
+        "BottomImage": {
+          "type": "ContentId",
+          "category": "Scrolling"
+        },
+        "BottomImageContent": {
+          "type": "Content",
+          "category": "Scrolling"
+        },
+        "CanvasPosition": {
+          "type": "Vector2",
+          "category": "Scrolling"
+        },
+        "CanvasSize": {
+          "type": "UDim2",
+          "category": "Scrolling"
+        },
+        "ElasticBehavior": {
+          "type": "enum",
+          "enum": "ElasticBehavior",
+          "category": "Scrolling"
+        },
+        "HorizontalScrollBarInset": {
+          "type": "enum",
+          "enum": "ScrollBarInset",
+          "category": "Scrolling"
+        },
+        "MidImage": {
+          "type": "ContentId",
+          "category": "Scrolling"
+        },
+        "MidImageContent": {
+          "type": "Content",
+          "category": "Scrolling"
+        },
+        "ScrollBarImageColor3": {
+          "type": "Color3",
+          "category": "Scrolling"
+        },
+        "ScrollBarImageTransparency": {
+          "type": "float",
+          "category": "Scrolling"
+        },
+        "ScrollBarThickness": {
+          "type": "int",
+          "category": "Scrolling"
+        },
+        "ScrollingDirection": {
+          "type": "enum",
+          "enum": "ScrollingDirection",
+          "category": "Scrolling"
+        },
+        "ScrollingEnabled": {
+          "type": "bool",
+          "category": "Scrolling"
+        },
+        "TopImage": {
+          "type": "ContentId",
+          "category": "Scrolling"
+        },
+        "TopImageContent": {
+          "type": "Content",
+          "category": "Scrolling"
+        },
+        "VerticalScrollBarInset": {
+          "type": "enum",
+          "enum": "ScrollBarInset",
+          "category": "Scrolling"
+        },
+        "VerticalScrollBarPosition": {
+          "type": "enum",
+          "enum": "VerticalScrollBarPosition",
+          "category": "Scrolling"
+        }
+      }
+    },
+    "TextBox": {
+      "visual": true,
+      "properties": {
+        "AutoLocalize": {
+          "type": "bool",
+          "category": "Localization"
+        },
+        "RootLocalizationTable": {
+          "type": "ref",
+          "category": "Localization"
+        },
+        "SelectionBehaviorDown": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorLeft": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorRight": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorUp": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionGroup": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "Active": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "AnchorPoint": {
+          "type": "Vector2",
+          "category": "Data"
+        },
+        "AutomaticSize": {
+          "type": "enum",
+          "enum": "AutomaticSize",
+          "category": "Data"
+        },
+        "BackgroundColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BackgroundTransparency": {
+          "type": "float",
+          "category": "Data"
+        },
+        "BorderColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BorderMode": {
+          "type": "enum",
+          "enum": "BorderMode",
+          "category": "Data"
+        },
+        "BorderSizePixel": {
+          "type": "int",
+          "category": "Data"
+        },
+        "ClipsDescendants": {
+          "type": "bool",
+          "category": "Behavior"
+        },
+        "InputSink": {
+          "type": "enum",
+          "enum": "InputSink",
+          "category": "Data"
+        },
+        "Interactable": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "LayoutOrder": {
+          "type": "int",
+          "category": "Data"
+        },
+        "NextSelectionDown": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionLeft": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionRight": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionUp": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "Position": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "Rotation": {
+          "type": "float",
+          "category": "Data"
+        },
+        "Selectable": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "SelectionImageObject": {
+          "type": "ref",
+          "category": "Appearance"
+        },
+        "SelectionOrder": {
+          "type": "int",
+          "category": "Selection"
+        },
+        "Size": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "SizeConstraint": {
+          "type": "enum",
+          "enum": "SizeConstraint",
+          "category": "Data"
+        },
+        "Visible": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "ZIndex": {
+          "type": "int",
+          "category": "Data"
+        },
+        "ClearTextOnFocus": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "CursorPosition": {
+          "type": "int",
+          "category": "Data"
+        },
+        "FontFace": {
+          "type": "Font",
+          "category": "Text"
+        },
+        "LineHeight": {
+          "type": "float",
+          "category": "Text"
+        },
+        "MaxVisibleGraphemes": {
+          "type": "int",
+          "category": "Text"
+        },
+        "MultiLine": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "OpenTypeFeatures": {
+          "type": "string",
+          "category": "Text"
+        },
+        "PlaceholderColor3": {
+          "type": "Color3",
+          "category": "Text"
+        },
+        "PlaceholderText": {
+          "type": "string",
+          "category": "Text"
+        },
+        "RichText": {
+          "type": "bool",
+          "category": "Text"
+        },
+        "SelectionStart": {
+          "type": "int",
+          "category": "Data"
+        },
+        "ShowNativeInput": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "Text": {
+          "type": "string",
+          "category": "Text"
+        },
+        "TextColor3": {
+          "type": "Color3",
+          "category": "Text"
+        },
+        "TextDirection": {
+          "type": "enum",
+          "enum": "TextDirection",
+          "category": "Text"
+        },
+        "TextEditable": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "TextScaled": {
+          "type": "bool",
+          "category": "Text"
+        },
+        "TextSize": {
+          "type": "float",
+          "category": "Text"
+        },
+        "TextStrokeColor3": {
+          "type": "Color3",
+          "category": "Text"
+        },
+        "TextStrokeTransparency": {
+          "type": "float",
+          "category": "Text"
+        },
+        "TextTransparency": {
+          "type": "float",
+          "category": "Text"
+        },
+        "TextTruncate": {
+          "type": "enum",
+          "enum": "TextTruncate",
+          "category": "Text"
+        },
+        "TextWrapped": {
+          "type": "bool",
+          "category": "Text"
+        },
+        "TextXAlignment": {
+          "type": "enum",
+          "enum": "TextXAlignment",
+          "category": "Text"
+        },
+        "TextYAlignment": {
+          "type": "enum",
+          "enum": "TextYAlignment",
+          "category": "Text"
+        }
+      }
+    },
+    "TextChannelWindow": {
+      "visual": true,
+      "properties": {
+        "AutoLocalize": {
+          "type": "bool",
+          "category": "Localization"
+        },
+        "RootLocalizationTable": {
+          "type": "ref",
+          "category": "Localization"
+        },
+        "SelectionBehaviorDown": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorLeft": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorRight": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorUp": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionGroup": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "Active": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "AnchorPoint": {
+          "type": "Vector2",
+          "category": "Data"
+        },
+        "AutomaticSize": {
+          "type": "enum",
+          "enum": "AutomaticSize",
+          "category": "Data"
+        },
+        "BackgroundColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BackgroundTransparency": {
+          "type": "float",
+          "category": "Data"
+        },
+        "BorderColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BorderMode": {
+          "type": "enum",
+          "enum": "BorderMode",
+          "category": "Data"
+        },
+        "BorderSizePixel": {
+          "type": "int",
+          "category": "Data"
+        },
+        "ClipsDescendants": {
+          "type": "bool",
+          "category": "Behavior"
+        },
+        "InputSink": {
+          "type": "enum",
+          "enum": "InputSink",
+          "category": "Data"
+        },
+        "Interactable": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "LayoutOrder": {
+          "type": "int",
+          "category": "Data"
+        },
+        "NextSelectionDown": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionLeft": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionRight": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionUp": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "Position": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "Rotation": {
+          "type": "float",
+          "category": "Data"
+        },
+        "Selectable": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "SelectionImageObject": {
+          "type": "ref",
+          "category": "Appearance"
+        },
+        "SelectionOrder": {
+          "type": "int",
+          "category": "Selection"
+        },
+        "Size": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "SizeConstraint": {
+          "type": "enum",
+          "enum": "SizeConstraint",
+          "category": "Data"
+        },
+        "Visible": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "ZIndex": {
+          "type": "int",
+          "category": "Data"
+        },
+        "FontFace": {
+          "type": "Font",
+          "category": "Appearance"
+        },
+        "Target": {
+          "type": "ref",
+          "category": "Data"
+        },
+        "UseDefaultFont": {
+          "type": "bool",
+          "category": "Appearance"
+        }
+      }
+    },
+    "VideoDisplay": {
+      "visual": true,
+      "properties": {
+        "AutoLocalize": {
+          "type": "bool",
+          "category": "Localization"
+        },
+        "RootLocalizationTable": {
+          "type": "ref",
+          "category": "Localization"
+        },
+        "SelectionBehaviorDown": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorLeft": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorRight": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorUp": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionGroup": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "Active": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "AnchorPoint": {
+          "type": "Vector2",
+          "category": "Data"
+        },
+        "AutomaticSize": {
+          "type": "enum",
+          "enum": "AutomaticSize",
+          "category": "Data"
+        },
+        "BackgroundColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BackgroundTransparency": {
+          "type": "float",
+          "category": "Data"
+        },
+        "BorderColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BorderMode": {
+          "type": "enum",
+          "enum": "BorderMode",
+          "category": "Data"
+        },
+        "BorderSizePixel": {
+          "type": "int",
+          "category": "Data"
+        },
+        "ClipsDescendants": {
+          "type": "bool",
+          "category": "Behavior"
+        },
+        "InputSink": {
+          "type": "enum",
+          "enum": "InputSink",
+          "category": "Data"
+        },
+        "Interactable": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "LayoutOrder": {
+          "type": "int",
+          "category": "Data"
+        },
+        "NextSelectionDown": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionLeft": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionRight": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionUp": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "Position": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "Rotation": {
+          "type": "float",
+          "category": "Data"
+        },
+        "Selectable": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "SelectionImageObject": {
+          "type": "ref",
+          "category": "Appearance"
+        },
+        "SelectionOrder": {
+          "type": "int",
+          "category": "Selection"
+        },
+        "Size": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "SizeConstraint": {
+          "type": "enum",
+          "enum": "SizeConstraint",
+          "category": "Data"
+        },
+        "Visible": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "ZIndex": {
+          "type": "int",
+          "category": "Data"
+        },
+        "ResampleMode": {
+          "type": "enum",
+          "enum": "ResamplerMode",
+          "category": "Video"
+        },
+        "ScaleType": {
+          "type": "enum",
+          "enum": "ScaleType",
+          "category": "Video"
+        },
+        "TileSize": {
+          "type": "UDim2",
+          "category": "Video"
+        },
+        "VideoColor3": {
+          "type": "Color3",
+          "category": "Video"
+        },
+        "VideoRectOffset": {
+          "type": "Vector2",
+          "category": "Video"
+        },
+        "VideoRectSize": {
+          "type": "Vector2",
+          "category": "Video"
+        },
+        "VideoTransparency": {
+          "type": "float",
+          "category": "Video"
+        }
+      }
+    },
+    "VideoFrame": {
+      "visual": true,
+      "properties": {
+        "AutoLocalize": {
+          "type": "bool",
+          "category": "Localization"
+        },
+        "RootLocalizationTable": {
+          "type": "ref",
+          "category": "Localization"
+        },
+        "SelectionBehaviorDown": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorLeft": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorRight": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorUp": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionGroup": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "Active": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "AnchorPoint": {
+          "type": "Vector2",
+          "category": "Data"
+        },
+        "AutomaticSize": {
+          "type": "enum",
+          "enum": "AutomaticSize",
+          "category": "Data"
+        },
+        "BackgroundColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BackgroundTransparency": {
+          "type": "float",
+          "category": "Data"
+        },
+        "BorderColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BorderMode": {
+          "type": "enum",
+          "enum": "BorderMode",
+          "category": "Data"
+        },
+        "BorderSizePixel": {
+          "type": "int",
+          "category": "Data"
+        },
+        "ClipsDescendants": {
+          "type": "bool",
+          "category": "Behavior"
+        },
+        "InputSink": {
+          "type": "enum",
+          "enum": "InputSink",
+          "category": "Data"
+        },
+        "Interactable": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "LayoutOrder": {
+          "type": "int",
+          "category": "Data"
+        },
+        "NextSelectionDown": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionLeft": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionRight": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionUp": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "Position": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "Rotation": {
+          "type": "float",
+          "category": "Data"
+        },
+        "Selectable": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "SelectionImageObject": {
+          "type": "ref",
+          "category": "Appearance"
+        },
+        "SelectionOrder": {
+          "type": "int",
+          "category": "Selection"
+        },
+        "Size": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "SizeConstraint": {
+          "type": "enum",
+          "enum": "SizeConstraint",
+          "category": "Data"
+        },
+        "Visible": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "ZIndex": {
+          "type": "int",
+          "category": "Data"
+        },
+        "Looped": {
+          "type": "bool",
+          "category": "Video"
+        },
+        "Playing": {
+          "type": "bool",
+          "category": "Video"
+        },
+        "RollOffMaxDistance": {
+          "type": "float",
+          "category": "Video"
+        },
+        "RollOffMinDistance": {
+          "type": "float",
+          "category": "Video"
+        },
+        "RollOffMode": {
+          "type": "enum",
+          "enum": "RollOffMode",
+          "category": "Video"
+        },
+        "TimePosition": {
+          "type": "double",
+          "category": "Video"
+        },
+        "Video": {
+          "type": "ContentId",
+          "category": "Video"
+        },
+        "VideoContent": {
+          "type": "Content",
+          "category": "Video"
+        },
+        "Volume": {
+          "type": "float",
+          "category": "Video"
+        }
+      }
+    },
+    "ViewportFrame": {
+      "visual": true,
+      "properties": {
+        "AutoLocalize": {
+          "type": "bool",
+          "category": "Localization"
+        },
+        "RootLocalizationTable": {
+          "type": "ref",
+          "category": "Localization"
+        },
+        "SelectionBehaviorDown": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorLeft": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorRight": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorUp": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionGroup": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "Active": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "AnchorPoint": {
+          "type": "Vector2",
+          "category": "Data"
+        },
+        "AutomaticSize": {
+          "type": "enum",
+          "enum": "AutomaticSize",
+          "category": "Data"
+        },
+        "BackgroundColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BackgroundTransparency": {
+          "type": "float",
+          "category": "Data"
+        },
+        "BorderColor3": {
+          "type": "Color3",
+          "category": "Data"
+        },
+        "BorderMode": {
+          "type": "enum",
+          "enum": "BorderMode",
+          "category": "Data"
+        },
+        "BorderSizePixel": {
+          "type": "int",
+          "category": "Data"
+        },
+        "ClipsDescendants": {
+          "type": "bool",
+          "category": "Behavior"
+        },
+        "InputSink": {
+          "type": "enum",
+          "enum": "InputSink",
+          "category": "Data"
+        },
+        "Interactable": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "LayoutOrder": {
+          "type": "int",
+          "category": "Data"
+        },
+        "NextSelectionDown": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionLeft": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionRight": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "NextSelectionUp": {
+          "type": "ref",
+          "category": "Selection"
+        },
+        "Position": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "Rotation": {
+          "type": "float",
+          "category": "Data"
+        },
+        "Selectable": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "SelectionImageObject": {
+          "type": "ref",
+          "category": "Appearance"
+        },
+        "SelectionOrder": {
+          "type": "int",
+          "category": "Selection"
+        },
+        "Size": {
+          "type": "UDim2",
+          "category": "Data"
+        },
+        "SizeConstraint": {
+          "type": "enum",
+          "enum": "SizeConstraint",
+          "category": "Data"
+        },
+        "Visible": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "ZIndex": {
+          "type": "int",
+          "category": "Data"
+        },
+        "Ambient": {
+          "type": "Color3",
+          "category": "Appearance"
+        },
+        "CurrentCamera": {
+          "type": "ref",
+          "category": "Data"
+        },
+        "ImageColor3": {
+          "type": "Color3",
+          "category": "Image"
+        },
+        "ImageTransparency": {
+          "type": "float",
+          "category": "Image"
+        },
+        "LightColor": {
+          "type": "Color3",
+          "category": "Appearance"
+        },
+        "LightDirection": {
+          "type": "Vector3",
+          "category": "Appearance"
+        }
+      }
+    },
+    "ScreenGui": {
+      "visual": false,
+      "properties": {
+        "AutoLocalize": {
+          "type": "bool",
+          "category": "Localization"
+        },
+        "RootLocalizationTable": {
+          "type": "ref",
+          "category": "Localization"
+        },
+        "SelectionBehaviorDown": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorLeft": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorRight": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionBehaviorUp": {
+          "type": "enum",
+          "enum": "SelectionBehavior",
+          "category": "Selection"
+        },
+        "SelectionGroup": {
+          "type": "bool",
+          "category": "Selection"
+        },
+        "Enabled": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "ResetOnSpawn": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "ZIndexBehavior": {
+          "type": "enum",
+          "enum": "ZIndexBehavior",
+          "category": "Data"
+        },
+        "ClipToDeviceSafeArea": {
+          "type": "bool",
+          "category": "Appearance"
+        },
+        "DisplayOrder": {
+          "type": "int",
+          "category": "Data"
+        },
+        "IgnoreGuiInset": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "SafeAreaCompatibility": {
+          "type": "enum",
+          "enum": "SafeAreaCompatibility",
+          "category": "Appearance"
+        },
+        "ScreenInsets": {
+          "type": "enum",
+          "enum": "ScreenInsets",
+          "category": "Appearance"
+        }
+      }
+    },
+    "UIBlur": {
+      "visual": false,
+      "properties": {
+        "Color": {
+          "type": "Color3",
+          "category": "Appearance"
+        },
+        "Enabled": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "Strength": {
+          "type": "enum",
+          "enum": "UIBlurStrength",
+          "category": "Appearance"
+        },
+        "Transparency": {
+          "type": "float",
+          "category": "Appearance"
+        }
+      }
+    },
+    "UIAspectRatioConstraint": {
+      "visual": false,
+      "properties": {
+        "AspectRatio": {
+          "type": "float",
+          "category": "Behavior"
+        },
+        "AspectType": {
+          "type": "enum",
+          "enum": "AspectType",
+          "category": "Behavior"
+        },
+        "DominantAxis": {
+          "type": "enum",
+          "enum": "DominantAxis",
+          "category": "Behavior"
+        }
+      }
+    },
+    "UISizeConstraint": {
+      "visual": false,
+      "properties": {
+        "MaxSize": {
+          "type": "Vector2",
+          "category": "Behavior"
+        },
+        "MinSize": {
+          "type": "Vector2",
+          "category": "Behavior"
+        }
+      }
+    },
+    "UITextSizeConstraint": {
+      "visual": false,
+      "properties": {
+        "MaxTextSize": {
+          "type": "int",
+          "category": "Behavior"
+        },
+        "MinTextSize": {
+          "type": "int",
+          "category": "Behavior"
+        }
+      }
+    },
+    "UICorner": {
+      "visual": false,
+      "properties": {
+        "BottomLeftRadius": {
+          "type": "UDim",
+          "category": "Individual Corners"
+        },
+        "BottomRightRadius": {
+          "type": "UDim",
+          "category": "Individual Corners"
+        },
+        "CornerRadius": {
+          "type": "UDim",
+          "category": "Appearance"
+        },
+        "TopLeftRadius": {
+          "type": "UDim",
+          "category": "Individual Corners"
+        },
+        "TopRightRadius": {
+          "type": "UDim",
+          "category": "Individual Corners"
+        }
+      }
+    },
+    "UIDragDetector": {
+      "visual": false,
+      "properties": {
+        "ActivatedCursorIcon": {
+          "type": "ContentId",
+          "category": "Image"
+        },
+        "ActivatedCursorIconContent": {
+          "type": "Content",
+          "category": "Image"
+        },
+        "BoundingBehavior": {
+          "type": "enum",
+          "enum": "UIDragDetectorBoundingBehavior",
+          "category": "Behavior"
+        },
+        "BoundingUI": {
+          "type": "ref",
+          "category": "Behavior"
+        },
+        "CursorIcon": {
+          "type": "ContentId",
+          "category": "Image"
+        },
+        "CursorIconContent": {
+          "type": "Content",
+          "category": "Image"
+        },
+        "DragAxis": {
+          "type": "Vector2",
+          "category": "Drag Directions"
+        },
+        "DragRelativity": {
+          "type": "enum",
+          "enum": "UIDragDetectorDragRelativity",
+          "category": "Behavior"
+        },
+        "DragRotation": {
+          "type": "float",
+          "category": "Dragged Amount"
+        },
+        "DragSpace": {
+          "type": "enum",
+          "enum": "UIDragDetectorDragSpace",
+          "category": "Behavior"
+        },
+        "DragStyle": {
+          "type": "enum",
+          "enum": "UIDragDetectorDragStyle",
+          "category": "Behavior"
+        },
+        "DragUDim2": {
+          "type": "UDim2",
+          "category": "Dragged Amount"
+        },
+        "Enabled": {
+          "type": "bool",
+          "category": "Behavior"
+        },
+        "MaxDragAngle": {
+          "type": "float",
+          "category": "Drag Limits"
+        },
+        "MaxDragTranslation": {
+          "type": "UDim2",
+          "category": "Drag Limits"
+        },
+        "MinDragAngle": {
+          "type": "float",
+          "category": "Drag Limits"
+        },
+        "MinDragTranslation": {
+          "type": "UDim2",
+          "category": "Drag Limits"
+        },
+        "ReferenceUIInstance": {
+          "type": "ref",
+          "category": "Behavior"
+        },
+        "ResponseStyle": {
+          "type": "enum",
+          "enum": "UIDragDetectorResponseStyle",
+          "category": "Behavior"
+        },
+        "Selectable": {
+          "type": "bool",
+          "category": "Behavior"
+        },
+        "SelectionModeDragSpeed": {
+          "type": "UDim2",
+          "category": "Behavior"
+        },
+        "SelectionModeRotateSpeed": {
+          "type": "float",
+          "category": "Behavior"
+        },
+        "UIDragSpeedAxisMapping": {
+          "type": "enum",
+          "enum": "UIDragSpeedAxisMapping",
+          "category": "Behavior"
+        }
+      }
+    },
+    "UIFlexItem": {
+      "visual": false,
+      "properties": {
+        "FlexMode": {
+          "type": "enum",
+          "enum": "UIFlexMode",
+          "category": "Appearance"
+        },
+        "GrowRatio": {
+          "type": "float",
+          "category": "Appearance"
+        },
+        "ItemLineAlignment": {
+          "type": "enum",
+          "enum": "ItemLineAlignment",
+          "category": "Appearance"
+        },
+        "ShrinkRatio": {
+          "type": "float",
+          "category": "Appearance"
+        }
+      }
+    },
+    "UIGradient": {
+      "visual": false,
+      "properties": {
+        "Color": {
+          "type": "ColorSequence",
+          "category": "Appearance"
+        },
+        "Enabled": {
+          "type": "bool",
+          "category": "Appearance"
+        },
+        "Offset": {
+          "type": "Vector2",
+          "category": "Appearance"
+        },
+        "Rotation": {
+          "type": "float",
+          "category": "Appearance"
+        },
+        "Scale": {
+          "type": "float",
+          "category": "Appearance"
+        },
+        "TileMode": {
+          "type": "enum",
+          "enum": "GradientTileMode",
+          "category": "Appearance"
+        },
+        "Transparency": {
+          "type": "NumberSequence",
+          "category": "Appearance"
+        },
+        "Type": {
+          "type": "enum",
+          "enum": "GradientType",
+          "category": "Appearance"
+        }
+      }
+    },
+    "UIGridLayout": {
+      "visual": false,
+      "properties": {
+        "FillDirection": {
+          "type": "enum",
+          "enum": "FillDirection",
+          "category": "Behavior"
+        },
+        "HorizontalAlignment": {
+          "type": "enum",
+          "enum": "HorizontalAlignment",
+          "category": "Alignment"
+        },
+        "SortOrder": {
+          "type": "enum",
+          "enum": "SortOrder",
+          "category": "Behavior"
+        },
+        "VerticalAlignment": {
+          "type": "enum",
+          "enum": "VerticalAlignment",
+          "category": "Alignment"
+        },
+        "CellPadding": {
+          "type": "UDim2",
+          "category": "Appearance"
+        },
+        "CellSize": {
+          "type": "UDim2",
+          "category": "Appearance"
+        },
+        "FillDirectionMaxCells": {
+          "type": "int",
+          "category": "Behavior"
+        },
+        "StartCorner": {
+          "type": "enum",
+          "enum": "StartCorner",
+          "category": "Behavior"
+        }
+      }
+    },
+    "UIListLayout": {
+      "visual": false,
+      "properties": {
+        "FillDirection": {
+          "type": "enum",
+          "enum": "FillDirection",
+          "category": "Behavior"
+        },
+        "HorizontalAlignment": {
+          "type": "enum",
+          "enum": "HorizontalAlignment",
+          "category": "Alignment"
+        },
+        "SortOrder": {
+          "type": "enum",
+          "enum": "SortOrder",
+          "category": "Behavior"
+        },
+        "VerticalAlignment": {
+          "type": "enum",
+          "enum": "VerticalAlignment",
+          "category": "Alignment"
+        },
+        "HorizontalFlex": {
+          "type": "enum",
+          "enum": "UIFlexAlignment",
+          "category": "Alignment"
+        },
+        "ItemLineAlignment": {
+          "type": "enum",
+          "enum": "ItemLineAlignment",
+          "category": "Alignment"
+        },
+        "Padding": {
+          "type": "UDim",
+          "category": "Appearance"
+        },
+        "VerticalFlex": {
+          "type": "enum",
+          "enum": "UIFlexAlignment",
+          "category": "Alignment"
+        },
+        "Wraps": {
+          "type": "bool",
+          "category": "Behavior"
+        }
+      }
+    },
+    "UIPageLayout": {
+      "visual": false,
+      "properties": {
+        "FillDirection": {
+          "type": "enum",
+          "enum": "FillDirection",
+          "category": "Behavior"
+        },
+        "HorizontalAlignment": {
+          "type": "enum",
+          "enum": "HorizontalAlignment",
+          "category": "Alignment"
+        },
+        "SortOrder": {
+          "type": "enum",
+          "enum": "SortOrder",
+          "category": "Behavior"
+        },
+        "VerticalAlignment": {
+          "type": "enum",
+          "enum": "VerticalAlignment",
+          "category": "Alignment"
+        },
+        "Animated": {
+          "type": "bool",
+          "category": "Appearance"
+        },
+        "Circular": {
+          "type": "bool",
+          "category": "Appearance"
+        },
+        "EasingDirection": {
+          "type": "enum",
+          "enum": "EasingDirection",
+          "category": "Appearance"
+        },
+        "EasingStyle": {
+          "type": "enum",
+          "enum": "EasingStyle",
+          "category": "Appearance"
+        },
+        "GamepadInputEnabled": {
+          "type": "bool",
+          "category": "Input"
+        },
+        "Padding": {
+          "type": "UDim",
+          "category": "Appearance"
+        },
+        "ScrollWheelInputEnabled": {
+          "type": "bool",
+          "category": "Input"
+        },
+        "TouchInputEnabled": {
+          "type": "bool",
+          "category": "Input"
+        },
+        "TweenTime": {
+          "type": "float",
+          "category": "Appearance"
+        }
+      }
+    },
+    "UITableLayout": {
+      "visual": false,
+      "properties": {
+        "FillDirection": {
+          "type": "enum",
+          "enum": "FillDirection",
+          "category": "Behavior"
+        },
+        "HorizontalAlignment": {
+          "type": "enum",
+          "enum": "HorizontalAlignment",
+          "category": "Alignment"
+        },
+        "SortOrder": {
+          "type": "enum",
+          "enum": "SortOrder",
+          "category": "Behavior"
+        },
+        "VerticalAlignment": {
+          "type": "enum",
+          "enum": "VerticalAlignment",
+          "category": "Alignment"
+        },
+        "FillEmptySpaceColumns": {
+          "type": "bool",
+          "category": "Appearance"
+        },
+        "FillEmptySpaceRows": {
+          "type": "bool",
+          "category": "Appearance"
+        },
+        "MajorAxis": {
+          "type": "enum",
+          "enum": "TableMajorAxis",
+          "category": "Behavior"
+        },
+        "Padding": {
+          "type": "UDim2",
+          "category": "Appearance"
+        }
+      }
+    },
+    "UIPadding": {
+      "visual": false,
+      "properties": {
+        "PaddingBottom": {
+          "type": "UDim",
+          "category": "Behavior"
+        },
+        "PaddingLeft": {
+          "type": "UDim",
+          "category": "Behavior"
+        },
+        "PaddingRight": {
+          "type": "UDim",
+          "category": "Behavior"
+        },
+        "PaddingTop": {
+          "type": "UDim",
+          "category": "Behavior"
+        }
+      }
+    },
+    "UIScale": {
+      "visual": false,
+      "properties": {
+        "Scale": {
+          "type": "float",
+          "category": "Behavior"
+        }
+      }
+    },
+    "UIShadow": {
+      "visual": false,
+      "properties": {
+        "BlurRadius": {
+          "type": "UDim",
+          "category": "Appearance"
+        },
+        "Color": {
+          "type": "Color3",
+          "category": "Appearance"
+        },
+        "Enabled": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "Inset": {
+          "type": "bool",
+          "category": "Appearance"
+        },
+        "Mode": {
+          "type": "enum",
+          "enum": "ApplyShadowMode",
+          "category": "Appearance"
+        },
+        "Offset": {
+          "type": "UDim2",
+          "category": "Appearance"
+        },
+        "ShowBehindParent": {
+          "type": "bool",
+          "category": "Appearance"
+        },
+        "Spread": {
+          "type": "UDim2",
+          "category": "Appearance"
+        },
+        "Transparency": {
+          "type": "float",
+          "category": "Appearance"
+        },
+        "ZIndex": {
+          "type": "int",
+          "category": "Appearance"
+        }
+      }
+    },
+    "UIStroke": {
+      "visual": false,
+      "properties": {
+        "ApplyStrokeMode": {
+          "type": "enum",
+          "enum": "ApplyStrokeMode",
+          "category": "Appearance"
+        },
+        "BorderOffset": {
+          "type": "UDim",
+          "category": "Appearance"
+        },
+        "BorderStrokePosition": {
+          "type": "enum",
+          "enum": "BorderStrokePosition",
+          "category": "Appearance"
+        },
+        "Color": {
+          "type": "Color3",
+          "category": "Appearance"
+        },
+        "Enabled": {
+          "type": "bool",
+          "category": "Data"
+        },
+        "LineJoinMode": {
+          "type": "enum",
+          "enum": "LineJoinMode",
+          "category": "Appearance"
+        },
+        "StrokeSizingMode": {
+          "type": "enum",
+          "enum": "StrokeSizingMode",
+          "category": "Appearance"
+        },
+        "Thickness": {
+          "type": "float",
+          "category": "Appearance"
+        },
+        "Transparency": {
+          "type": "float",
+          "category": "Appearance"
+        },
+        "ZIndex": {
+          "type": "int",
+          "category": "Appearance"
+        }
+      }
+    }
+  },
+  "enums": {
+    "ApplyShadowMode": ["Shape", "Text"],
+    "ApplyStrokeMode": ["Contextual", "Border"],
+    "AspectType": ["FitWithinMaxSize", "ScaleWithParentSize"],
+    "AutomaticSize": ["None", "X", "Y", "XY"],
+    "BorderMode": ["Outline", "Middle", "Inset"],
+    "BorderStrokePosition": ["Outer", "Center", "Inner"],
+    "ButtonStyle": [
+      "Custom",
+      "RobloxButtonDefault",
+      "RobloxButton",
+      "RobloxRoundButton",
+      "RobloxRoundDefaultButton",
+      "RobloxRoundDropdownButton"
+    ],
+    "DominantAxis": ["Width", "Height"],
+    "EasingDirection": ["In", "Out", "InOut"],
+    "EasingStyle": [
+      "Linear",
+      "Sine",
+      "Back",
+      "Quad",
+      "Quart",
+      "Quint",
+      "Bounce",
+      "Elastic",
+      "Exponential",
+      "Circular",
+      "Cubic"
+    ],
+    "ElasticBehavior": ["WhenScrollable", "Always", "Never"],
+    "FillDirection": ["Horizontal", "Vertical"],
+    "FrameStyle": [
+      "Custom",
+      "ChatBlue",
+      "RobloxSquare",
+      "RobloxRound",
+      "ChatGreen",
+      "ChatRed",
+      "DropShadow"
+    ],
+    "GradientTileMode": ["Clamp", "Repeat", "Mirror"],
+    "GradientType": ["Linear", "Radial", "Conical", "Elliptical"],
+    "HorizontalAlignment": ["Center", "Left", "Right"],
+    "InputSink": ["None", "Activate", "All"],
+    "ItemLineAlignment": ["Automatic", "Start", "Center", "End", "Stretch"],
+    "LineJoinMode": ["Round", "Bevel", "Miter"],
+    "ResamplerMode": ["Default", "Pixelated"],
+    "RollOffMode": ["Inverse", "Linear", "LinearSquare", "InverseTapered"],
+    "SafeAreaCompatibility": ["None", "FullscreenExtension"],
+    "ScaleType": ["Stretch", "Slice", "Tile", "Fit", "Crop"],
+    "ScreenInsets": ["None", "DeviceSafeInsets", "CoreUISafeInsets", "TopbarSafeInsets"],
+    "ScrollBarInset": ["None", "ScrollBar", "Always"],
+    "ScrollingDirection": ["X", "Y", "XY"],
+    "SelectionBehavior": ["Escape", "Stop"],
+    "SizeConstraint": ["RelativeXY", "RelativeXX", "RelativeYY"],
+    "SortOrder": ["Name", "LayoutOrder"],
+    "StartCorner": ["TopLeft", "TopRight", "BottomLeft", "BottomRight"],
+    "StrokeSizingMode": ["FixedSize", "ScaledSize"],
+    "TableMajorAxis": ["RowMajor", "ColumnMajor"],
+    "TextDirection": ["Auto", "LeftToRight", "RightToLeft"],
+    "TextTruncate": ["None", "AtEnd", "SplitWord"],
+    "TextXAlignment": ["Left", "Right", "Center"],
+    "TextYAlignment": ["Top", "Center", "Bottom"],
+    "UIBlurStrength": ["Light", "Medium", "Heavy"],
+    "UIDragDetectorBoundingBehavior": ["Automatic", "EntireObject", "HitPoint"],
+    "UIDragDetectorDragRelativity": ["Absolute", "Relative"],
+    "UIDragDetectorDragSpace": ["Parent", "LayerCollector", "Reference"],
+    "UIDragDetectorDragStyle": ["TranslatePlane", "TranslateLine", "Rotate", "Scriptable"],
+    "UIDragDetectorResponseStyle": ["Offset", "Scale", "CustomOffset", "CustomScale"],
+    "UIDragSpeedAxisMapping": ["XY", "XX", "YY"],
+    "UIFlexAlignment": ["None", "Fill", "SpaceAround", "SpaceBetween", "SpaceEvenly"],
+    "UIFlexMode": ["None", "Grow", "Shrink", "Fill", "Custom"],
+    "VerticalAlignment": ["Center", "Top", "Bottom"],
+    "VerticalScrollBarPosition": ["Right", "Left"],
+    "ZIndexBehavior": ["Global", "Sibling"]
+  }
+}

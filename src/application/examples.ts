@@ -1,0 +1,120 @@
+import { createDocument, udim } from '../domain/document';
+import { applyCommands } from './commands';
+import type { Command } from './commands';
+
+export function exampleDocument(id: string) {
+  const commands: Command[] = [
+    {
+      kind: 'add',
+      id: 'menu',
+      type: 'Frame',
+      parentId: 'screen',
+      name: 'Menu',
+      properties: { size: udim(0, 0, 1, 1), position: udim(), fill: '#282828' },
+    },
+    {
+      kind: 'add',
+      id: 'chapter',
+      type: 'TextLabel',
+      parentId: 'menu',
+      name: 'Capítulo',
+      properties: {
+        position: udim(84, 108),
+        size: udim(380, 30),
+        text: 'CAPÍTULO 01  /  UM NOVO COMEÇO',
+        textSize: 13,
+        textColor: '#a8a8a8',
+        textAlign: 'Left',
+      },
+    },
+    {
+      kind: 'add',
+      id: 'title',
+      type: 'TextLabel',
+      parentId: 'menu',
+      name: 'Título',
+      properties: {
+        position: udim(80, 156),
+        size: udim(680, 100),
+        text: 'Clareira',
+        textSize: 80,
+        font: 'GothamBold',
+        textColor: '#dedede',
+        textAlign: 'Left',
+        tween: { effect: 'SlideUp', duration: 0.5, delay: 0, easing: 'Sine' },
+      },
+    },
+    {
+      kind: 'add',
+      id: 'line',
+      type: 'Frame',
+      parentId: 'menu',
+      name: 'Divisor',
+      properties: { position: udim(84, 302), size: udim(320, 1), fill: '#5e5e5e' },
+    },
+    {
+      kind: 'add',
+      id: 'play',
+      type: 'TextButton',
+      parentId: 'menu',
+      name: 'Jogar',
+      properties: {
+        position: udim(84, 350),
+        size: udim(320, 60),
+        text: 'Jogar',
+        textSize: 18,
+        textColor: '#292929',
+        fill: '#d0d0d0',
+        corner: 8,
+      },
+    },
+    {
+      kind: 'add',
+      id: 'options',
+      type: 'TextButton',
+      parentId: 'menu',
+      name: 'Opções',
+      properties: {
+        position: udim(84, 428),
+        size: udim(320, 60),
+        text: 'Opções',
+        textSize: 18,
+        textColor: '#d0d0d0',
+        fill: '#282828',
+        corner: 8,
+        stroke: { color: '#5e5e5e', thickness: 1, transparency: 0 },
+      },
+    },
+    {
+      kind: 'add',
+      id: 'orb',
+      type: 'Frame',
+      parentId: 'menu',
+      name: 'Círculo',
+      properties: {
+        position: udim(840, 178),
+        size: udim(280, 280),
+        fill: '#484848',
+        corner: 140,
+        transparency: 0.3,
+        gradient: { from: '#8c8c8c', to: '#484848', rotation: 60 },
+      },
+    },
+    {
+      kind: 'add',
+      id: 'caption',
+      type: 'TextLabel',
+      parentId: 'menu',
+      name: 'Rodapé',
+      properties: {
+        position: udim(84, 632),
+        size: udim(800, 28),
+        text: 'UMA AVENTURA, NO SEU TEMPO.',
+        textSize: 11,
+        textColor: '#949494',
+        textAlign: 'Left',
+      },
+    },
+  ];
+  return applyCommands(createDocument(id, 'Menu principal'), commands);
+}

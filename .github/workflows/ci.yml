@@ -1,0 +1,91 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-24.04]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run format:check
+      - run: npm run check
+      - name: Linux desktop dependencies
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libgtk-3-0 libnss3 libasound2t64 libgbm1 xvfb
+      - name: Electron integration (Linux)
+        if: runner.os == 'Linux'
+        run: xvfb-run --auto-servernum npm run test:e2e
+      - name: Electron integration (Windows)
+        if: runner.os == 'Windows'
+        run: npm run test:e2e
+      - name: Package Windows
+        if: runner.os == 'Windows'
+        run: npm run dist:win
+      - name: Package Linux
+        if: runner.os == 'Linux'
+        run: npm run dist:linux
+      - name: Packaged application (Linux)
+        if: runner.os == 'Linux'
+        run: xvfb-run --auto-servernum node scripts/smoke-package.mjs
+      - name: Packaged application (Windows)
+        if: runner.os == 'Windows'
+        run: node scripts/smoke-package.mjs
+      - run: node scripts/release-checksums.mjs
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: FitaSign-${{ runner.os }}
+          path: |
+            release/*.exe
+            release/*.AppImage
+            release/*.deb
+            release/SHA256SUMS-*.txt
+          if-no-files-found: error
+      - name: Integration evidence
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: integration-${{ runner.os }}
+          path: test-results/
+          if-no-files-found: ignore
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Download build artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run download "$GITHUB_RUN_ID" --pattern 'FitaSign-*' --dir artifacts
+      - name: Publish beta
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" --prerelease --verify-tag --title "FitaSign $GITHUB_REF_NAME" --notes-file CHANGELOG.md artifacts/FitaSign-*/*
